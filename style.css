@@ -1,0 +1,87 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Game Title */
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00e5ff;
+}
+
+/* Player Turn */
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Game Board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+/* Game Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+
+    color: #141e30;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cell Hover */
+.cell:hover {
+    background-color: #d8faff;
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+    color: #00ff99;
+}
+
+/* Restart Button */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00e5ff;
+    color: #141e30;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #00bcd4;
+}
